@@ -10,13 +10,13 @@ function App() {
     <CreditProvider>
       <Router>
         <Routes>
-          {/* ✅ 기본 진입은 홈으로 */}
+          {/* 기본 진입은 홈으로 */}
           <Route path="/" element={<Navigate to="/home" />} />
 
-          {/* ✅ 다른 팀원이 만드는 홈 */}
+          {/* 다른 팀원이 만드는 홈 */}
           <Route path="/home" element={<div>홈</div>} />
 
-          {/* ✅ 너가 만드는 학점관리 4페이지 */}
+          {/* 학점관리 4페이지 */}
           <Route path="/credit/input" element={<GradeInputPage />} />
           <Route path="/credit/summary" element={<GraduationPage />} />
           <Route path="/credit/select-semester" element={<SemesterSelectPage />} />
