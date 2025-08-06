@@ -66,8 +66,14 @@ function GradeInputPage() {
     <>
       <Container className="py-4 mb-5" style={{ maxWidth: '480px' }}>
         <Card className="p-4 border-0 shadow-sm rounded-4">
-          <h5 className="fw-bold">학점관리</h5>
-          <p className="text-muted small">학점 입력</p>
+          <h3 className="fw-bold">학점관리</h3>
+          <h5 className="text-muted large">학점 입력</h5>
+          <p
+            className="small mb-4"
+            style={{ color: '#6c757d', opacity: 0.6 }}
+          >
+            ○○○님의 학점을 입력해주세요
+          </p>
 
           {/* ✅ 1-2-3 단계 표시 */}
           <StepIndicator step={1} />

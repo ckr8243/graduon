@@ -19,8 +19,15 @@ function SemesterSelectPage() {
     <>
       <Container className="py-4 mb-5" style={{ maxWidth: '480px' }}>
         <Card className="p-4 border-0 shadow-sm rounded-4">
-          <h5 className="fw-bold">학점관리</h5>
-          <p className="text-muted small">학기별 학점 현황</p>
+          <h3 className="fw-bold">학점관리</h3>
+          <h5 className="text-muted large">학기별 학점 현황</h5>
+          <p
+            className="small mb-4"
+            style={{ color: '#6c757d', opacity: 0.6 }}
+          >
+            OOO님의 정보를 바탕으로,< br/>
+            학기별 학점을 정리해 드릴게요!
+          </p>
 
           <StepIndicator step={3} />
 
@@ -63,13 +70,14 @@ function SemesterSelectPage() {
 
             <div className="d-grid">
               <Button
-                variant="primary"
+                style={{ backgroundColor: '#3e3e9aff', borderColor: '#3e3e9aff' }}
                 size="md"
                 disabled={!year || !semester}
-                onClick={handleNext}
+                onClick={() => navigate('/credit/result')}
               >
                 다음 단계로 →
               </Button>
+
             </div>
           </Form>
         </Card>
